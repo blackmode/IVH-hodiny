@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project fitkitversion="1.0" outputprefix="digger">
+    <name>Hodiny VHDL</name>
+    <author>Tomáš Slunský</author>
+    <authoremail>xsluns01@stud.fit.vutbr.cz</authoremail>
+    <description>Hodiny ve VHDL</description>
+
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <fpga architecture="pc"> 
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+        <file>engen.vhd</file>
+        <file>top.vhd</file>
+    </fpga>
+</project>
